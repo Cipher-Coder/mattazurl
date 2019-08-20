@@ -179,7 +179,7 @@ class PSHBPingHandler(BaseHandler):
 
 class RedirectToGithubHandler(webapp2.RequestHandler):
   def get(self):
-    self.redirect('http://github.com/izuzak/urlreq')
+    self.redirect('http://github.com/Cipher-Coder/mattazurl')
 
 class PSHBAppenginePingHandler(BaseHandler):
   def setupRequest(self, method):
