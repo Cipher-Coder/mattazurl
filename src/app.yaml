@@ -1,0 +1,17 @@
+application: urlreq-hrd
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+libraries:
+- name: webapp2
+  version: latest
+
+handlers:
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+
+- url: .*
+  script: urlreq.app
